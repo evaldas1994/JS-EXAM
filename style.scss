@@ -1,2 +1,46 @@
-// MOBILE
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+// variables
+$color-success: rgb(0, 171, 102);
+$font-family: 'Open Sans', sans-serif;
+
+// MOBILE
+body {
+    font-family: $font-family;
+}
+header {
+    width: 100vw;
+    text-align: center;
+    border-bottom: 4px solid $color-success;
+
+    img {
+        width: 40%;
+        vertical-align: top;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 0 0.5rem 0;
+        margin-top: 0.9rem;
+        margin-bottom: 0.9rem;
+        font-size: 0;
+
+        li {
+            display: inline;
+            
+            a {
+                text-decoration: none;
+                padding: 0.5rem 1.5rem;
+                color: black;
+                font-size: 0.75rem;
+            }
+
+            a.active {
+                background: $color-success;
+                border-radius: 20px;
+                color: white;
+            }
+        }
+    }
+}
