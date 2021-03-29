@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -6,7 +6,7 @@ body {
 header {
   width: 100vw;
   text-align: center;
-  border-bottom: 4px solid #00ab66;
+  border-bottom: 4px solid #52a785;
 }
 
 header img {
@@ -16,10 +16,9 @@ header img {
 
 header ul {
   list-style: none;
-  padding: 0 0 0.5rem 0;
-  margin-top: 0.9rem;
-  margin-bottom: 0.9rem;
-  font-size: 0;
+  padding: 0 0 0.5em 0;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
 }
 
 header ul li {
@@ -28,14 +27,98 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5em 1.6em;
   color: black;
-  font-size: 0.75rem;
+  font-size: 0.8em;
+  vertical-align: top;
 }
 
 header ul li a.active {
-  background: #00ab66;
+  background: #52a785;
   border-radius: 20px;
   color: white;
+}
+
+main section#signUpSection .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section#signUpSection .container h1 {
+  font-size: 1.5rem;
+  color: #52a785;
+}
+
+main section#signUpSection .container .signUpForm {
+  display: block;
+}
+
+main section#signUpSection .container .signUpForm .notification {
+  padding: 1.2em;
+  background: whitesmoke;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+main section#signUpSection .container .signUpForm .notification span {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  color: white;
+  background-color: #bdbaba;
+  border-radius: 100%;
+  width: 1em;
+  line-height: 1em;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0px 1px 2px 1px;
+  text-transform: lowercase;
+}
+
+main section#signUpSection .container .signUpForm .form-item {
+  margin-top: 1em;
+}
+
+main section#signUpSection .container .signUpForm .form-item label {
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0.2em;
+}
+
+main section#signUpSection .container .signUpForm .form-item input {
+  margin-top: 0.6em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5em 0.5em;
+  border: 1px solid #d6d6d6;
+}
+
+main section#signUpSection .container .signUpForm .form-item input::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#signUpSection .container .signUpForm .form-item input:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#signUpSection .container .signUpForm .form-item input::-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#signUpSection .container .signUpForm .form-item input::placeholder {
+  color: #d6d6d6;
+}
+
+main section#signUpSection .container .signUpForm .form-item button {
+  float: right;
+  background: #52a785;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5em 1.6em;
+  font-size: 0.8em;
+  border: 2px solid #52a785;
 }
 /*# sourceMappingURL=style.css.map */
