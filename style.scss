@@ -14,37 +14,47 @@ $light-grey: rgb(214, 214, 214);
 body {
     font-family: $font-family;
 }
+
 header {
     width: 100vw;
     text-align: center;
     border-bottom: 4px solid $color-success;
 
-    img {
-        width: 40%;
-        vertical-align: top;
-    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;   
 
-    ul {
-        list-style: none;
-        padding: 0 0 0.5em 0;
-        margin-top: 0.9em;
-        margin-bottom: 0.9em;
-
-        li {
-            display: inline;
+        .logo {
+            width: 100%;
             
-            a {
-                text-decoration: none;
-                padding: $button-padding;
-                color: black;
-                font-size: 0.8em;
+            img {
+                width: 45%;
                 vertical-align: top;
             }
-
-            a.active {
-                background: $color-success;
-                border-radius: $button-radius;
-                color: $button-text-color;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0.5em;
+            margin-bottom: 1.2em;
+            
+            li {
+                display: inline;
+                
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.8em;
+                    padding: $button-padding;
+                }
+    
+                a.active {
+                    background: $color-success;
+                    border-radius: $button-radius;
+                    color: $button-text-color;
+                }
             }
         }
     }
@@ -116,7 +126,8 @@ main {
                         color: $button-text-color;
                         border-radius: $button-radius;
                         padding: $button-padding;
-                        font-size: 0.8em;                     
+                        font-size: 0.8em;   
+                        vertical-align: top;                  
                         border: 2px solid $color-success;
                     }   
                 }
@@ -124,3 +135,45 @@ main {
         }
     }
 }
+
+@media only screen and (min-width: 760px) {
+    body {
+      
+        header {
+
+            .container {
+                width: 98%;
+                margin: 0 auto;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                .logo {
+
+                    width: 100px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                nav {
+
+                    ul {
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+
+        main {
+            
+            section#signUpSection {
+                
+                .container {
+                    width: 70%;
+
+                }
+            }
+        }
+    }
+  }
