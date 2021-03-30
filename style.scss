@@ -10,13 +10,16 @@ $button-padding: 0.5em 1.6em;
 $button-text-color: white;
 $light-grey: rgb(214, 214, 214);
 
+$mobile-container-width: 90%; 
+$desktop-container-width: 80%; 
+
+
 // MOBILE
 body {
     font-family: $font-family;
 }
 
 header {
-    width: 100vw;
     text-align: center;
     border-bottom: 4px solid $color-success;
 
@@ -194,6 +197,75 @@ main {
             }
         }
     }
+
+    section#coursesSection {
+        h1 {
+            color: $color-success;
+        }
+
+        .container {
+            width: $mobile-container-width;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                padding: 0 1em; 
+            }
+
+            ul.options {
+                list-style: none;
+                padding: 0 1em;
+
+                li {
+                    display: inline-block;
+                    padding: 0.2em 1em;
+                    font-size: 0.8em;
+                    border: 1px solid $light-grey;
+                }
+            }
+
+            ul.price {
+                list-style: none;
+                padding: 0 1em;
+
+                li {
+                    display: inline;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 1.2em;
+                    color: $light-grey;
+                    font-weight: bold;
+                }
+
+                li:last-child {
+                    
+                    color: #ff0000;
+                }
+            } 
+        } 
+        
+        .button {
+            text-align: center;
+            padding: 1em 0 5em 0;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                font-size: 0.8em;
+                padding: 0.5em 5em;
+            }
+
+            a.active {
+                background: $color-success;
+                border-radius: $button-radius;
+                color: $button-text-color;
+            }
+        }  
+    }
 }
 
 @media only screen and (min-width: 760px) {
@@ -306,6 +378,71 @@ main {
                     width: 70%;
 
                 }
+            }
+
+            section#coursesSection {
+                
+                .container {
+                    width: $desktop-container-width;
+                    margin: 0 auto;
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    
+                    
+                    h1 {
+                        width: 100%;
+                        padding: 0 0.25em; //?
+                    }
+                    
+                    .item {
+                        width: 25%;
+                        padding: 0 0.5em;
+                        box-sizing: border-box;
+
+
+                        img {
+                            width: 100%;
+                        }
+            
+                        h3 {
+                            padding: 0 1em; 
+                            font-size: 0.8em;
+                        }
+            
+                        ul.options {
+                            list-style: none;
+                            padding: 0 1em;
+            
+                            li {
+                                display: inline-block;
+                                padding: 0.2em 1em;
+                                font-size: 0.5em;
+                                border: 1px solid $light-grey;
+                            }
+                        }
+            
+                        ul.price {
+                            list-style: none;
+                            padding: 0 1em;
+            
+                            li {
+                                display: inline;
+                                padding-left: 0;
+                                padding-right: 0;
+                                font-size: 1.2em;
+                                color: $light-grey;
+                                font-weight: bold;
+                            }
+            
+                            li:last-child {
+                                
+                                color: #ff0000;
+                            }
+                        } 
+                    }
+                } 
             }
         }
     }
