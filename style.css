@@ -277,6 +277,149 @@ main section#coursesSection .button a.active {
   color: white;
 }
 
+main section#addCourseSection .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section#addCourseSection .container h1 {
+  font-size: 1.5rem;
+  color: #52a785;
+}
+
+main section#addCourseSection .container .addCourseForm {
+  display: block;
+}
+
+main section#addCourseSection .container .addCourseForm .notification {
+  padding: 1.2em;
+  background: whitesmoke;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+main section#addCourseSection .container .addCourseForm .notification span {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  color: white;
+  background-color: #bdbaba;
+  border-radius: 100%;
+  width: 1em;
+  line-height: 1em;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0px 1px 2px 1px;
+  text-transform: lowercase;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item {
+  margin-top: 1em;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item label {
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0.2em;
+  font-weight: bold;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item input {
+  margin-top: 0.6em;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5em 0.5em;
+  border: 1px solid #d6d6d6;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item input::-webkit-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item input:-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item input::-ms-input-placeholder {
+  color: #d6d6d6;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item input::placeholder {
+  color: #d6d6d6;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item .checkbox-item input {
+  width: auto;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item .checkbox-item label {
+  display: inline;
+  font-weight: normal;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item button {
+  margin-top: 1em;
+  background: #52a785;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5em 1.6em;
+  font-size: 0.8em;
+  vertical-align: top;
+  border: 2px solid #52a785;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.prices .nprice {
+  width: 49%;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.prices .oprice {
+  width: 49%;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.vlength {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.vlength .groupOfInput {
+  width: 100%;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.vlength .groupOfInput input {
+  float: left;
+  width: calc(100% - 5em);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section#addCourseSection .container .addCourseForm .form-item.vlength .groupOfInput p {
+  line-height: 1.125em;
+  margin: 0.6em 0 0 0;
+  padding: 0.5em 0.5em;
+  text-align: center;
+  width: 5em;
+  border: 1px solid #d6d6d6;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: whitesmoke;
+}
+
 @media only screen and (min-width: 760px) {
   body header .container {
     width: 98%;

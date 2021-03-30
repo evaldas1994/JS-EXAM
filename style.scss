@@ -266,8 +266,137 @@ main {
             }
         }  
     }
+
+    section#addCourseSection {
+        .container {
+            width: $mobile-container-width;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 1.5rem;
+                color: $color-success;
+            }
+
+            .addCourseForm {
+                display: block;
+
+                .notification {
+                    padding: 1.2em;
+                    background: rgb(245, 245, 245);
+                    font-size: 0.9rem;
+                    position: relative;
+    
+                    span {
+                        position: absolute;
+                        right: 7px;
+                        top: 7px;
+                        color: white;
+                        background-color: rgb(189, 186, 186);
+                        border-radius: 100%;
+                        width: 1em;
+                        line-height: 1em;
+                        text-align: center;
+                        font-size: 0.9rem;
+                        padding: 0px 1px 2px 1px;
+                        text-transform: lowercase;
+                    }
+                }
+
+                .form-item {
+                    margin-top: 1em;
+
+                    label {
+                        width: 100%;
+                        display: block;
+                        box-sizing: border-box;
+                        margin-top: 0.2em;  
+                        font-weight: bold;
+                    }
+
+                    input {
+                        margin-top: 0.6em;
+                        width: 100%;
+                        box-sizing: border-box;
+                        padding: 0.5em 0.5em;
+                        border: 1px solid $light-grey;
+                        
+                    }
+                    input::placeholder {
+                        color: $light-grey;
+                    }
+
+                    .checkbox-item {
+                        
+                        input {
+                            width: auto;
+                        }
+
+                        label {
+                            display: inline;
+                            font-weight: normal;
+                        }
+                    }
+
+
+                    
+
+                    button {
+                        margin-top: 1em;
+                        background: $color-success;
+                        color: $button-text-color;
+                        border-radius: $button-radius;
+                        padding: $button-padding;
+                        font-size: 0.8em;   
+                        vertical-align: top;                  
+                        border: 2px solid $color-success;
+                    }   
+                }
+
+                .form-item.prices {
+                    display: flex;
+                    justify-content: space-between;
+                    .nprice {
+                        width: 49%;
+                    }
+
+                    .oprice {
+                        width: 49%;
+                    }
+                }
+
+                .form-item.vlength {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .groupOfInput {
+                        width: 100%;
+
+                        input {
+                            float:left; 
+                            width: calc(100% - 5em);
+                            box-sizing: border-box;
+                        }
+
+                        p{
+                            line-height: 1.125em;
+                            margin: 0.6em 0 0 0;
+                            padding: 0.5em 0.5em;
+                            text-align: center;
+                            width: 5em;
+                            border: 1px solid $light-grey;
+                            display: inline-block;
+                            box-sizing: border-box;
+                            background: whitesmoke;;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
+// DESKTOP
 @media only screen and (min-width: 760px) {
     body {
       
@@ -444,6 +573,9 @@ main {
                     }
                 } 
             }
+
+            
         }
     }
-  }
+}
+

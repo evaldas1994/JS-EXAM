@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="http://pngimg.com/uploads/google/google_PNG19644.png" alt="google">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Dashboard</a></li>
+                    <li><a class="active" href="signUp.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="addCourseSection">
+            <div class="container">
+                <h1>Add a Cource</h1>
+                <form class="addCourseForm" name="addCourseForm">
+                    <div class="notification">
+                        Yor course has been added successfully
+                        <span>X</span>
+                    </div>
+
+                    <div class="form-item name">
+                        <label for="name">Course Name</label>
+                        <input type="text" name="name" placeholder="Something cooolll" required>
+                    </div>
+
+                    <div class="form-item image">
+                        <label for="image">Image</label>
+                        <input type="url" name="image" placeholder="http://image.png" required>
+                    </div>
+
+                    <div class="form-item prices">
+                        <div class="oprice">
+                            <label for="oprice">Old Price (Eur)</label>
+                            <input type="number" name="oprice" placeholder="50" required>
+                        </div>
+    
+                        <div class="nprice">
+                            <label for="nprice">New Price (Eur)</label>
+                            <input type="number" name="nprice" placeholder="50" required>
+                        </div>
+                    </div>
+
+                    <div class="form-item vlength">
+                        <label class="vlength" for="vlength">Video Length</label>
+                        <div class="groupOfInput">
+                            <input class="vlength" type="number" name="vlength" placeholder="250" required>
+                            <p class="vlength">minutes</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item checkbox">
+                        <label for="checkbox">Check all that apply:</label>
+
+                        <div class="checkbox-item">
+                            <input class="checkbox" type="checkbox" name="check1" value="game">
+                            <label for="check1"> I'ts a game</label>
+                        </div>
+                        
+                        <div class="checkbox-item">
+                            <input class="checkbox" type="checkbox" name="check2" value="beginners">
+                            <label for="check2"> It's for beginners</label>
+                        </div>
+
+                        <div class="checkbox-item">
+                            <input class="checkbox" type="checkbox" name="check3" value="cc">
+                            <label for="check3"> It's CC</label>
+                        </div>
+
+                        <button type="submit">Add</button>
+                    </div>
+                    
+  
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
