@@ -4,12 +4,11 @@ const signUpForm = document.forms.signUpForm;
 signUpForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    
-
+    //get data
     const email = e.target.elements.email.value.trim();
     const password = e.target.elements.password.value;
 
-    //postData
+    //post data
     fetch(baseUrl + "register", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -24,6 +23,7 @@ signUpForm.addEventListener("submit", (e) => {
     });
 })
 
+//=========  F U N C T I O N S  ==========
 function showNotification(message) {
   const notification = document.getElementById("notification");
   notification.classList.add("notification");

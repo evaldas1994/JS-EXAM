@@ -4,12 +4,11 @@ const loginForm = document.forms.loginForm;
 loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    
-console.log("clicked");
+    //get data
     const email = e.target.elements.email.value.trim();
     const password = e.target.elements.password.value;
 
-    //postData
+    //post data
     fetch(baseUrl + "login", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -18,7 +17,8 @@ console.log("clicked");
     .then((res) => res.json())
     .then((data) => {
         if (data.status.toLowerCase().includes("ok")) {
-            location.replace("index.html");
+          localStorage.setItem("userid", data.id);
+          location.replace("index.html");
         } else {
             showNotification(data.status);
             e.target.elements.password.value = "";
@@ -26,6 +26,7 @@ console.log("clicked");
     });
 })
 
+//=========  F U N C T I O N S  ==========
 function showNotification(message) {
   const notification = document.getElementById("notification");
   notification.classList.add("notification");
