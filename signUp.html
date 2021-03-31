@@ -7,6 +7,7 @@
     <title>sign up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+    <script src="signUp.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,19 +28,17 @@
         <section id="signUpSection">
             <div class="container">
                 <h1>Sign Up</h1>
-                <form class="signUpForm" name="signUpForm">
-                    <div class="notification">
-                        Email or password incorrect
-                        <span>X</span>
+                <form id="signUpForm" class="signUpForm" name="signUpForm">
+                    <div id="notification">
                     </div>
                     <div class="form-item email">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="email@email.com" required>
+                        <input name="email" type="email" placeholder="email@email.com" required>
                     </div>
 
                     <div class="form-item pass">
                         <label for="pass">Password</label>
-                        <input type="password" placeholder="Password" required>
+                        <input name="password" type="password" minlength="5" placeholder="Password" required>
                     </div>
                     <div class="form-item button">
                         <button type="submit">Sign Up</button>
